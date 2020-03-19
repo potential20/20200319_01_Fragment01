@@ -27,6 +27,12 @@
         </LinearLayout>
 
         <fragment
+            android:id="@+id/secondFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="kr.co.tjoeun.a20200319_01_fragment01.fragment.SecondFragment"/>
+
+        <fragment
             android:id="@+id/firstFrag"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
