@@ -25,18 +25,35 @@
                 android:layout_weight="1"
                 android:text="둘째 프래그먼트"/>
         </LinearLayout>
-
-        <fragment
-            android:id="@+id/secondFrag"
+        <LinearLayout
+            android:id="@+id/firstFragLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            class="kr.co.tjoeun.a20200319_01_fragment01.fragment.SecondFragment"/>
+            android:orientation="vertical">
+            <fragment
+                android:id="@+id/firstFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="kr.co.tjoeun.a20200319_01_fragment01.fragment.FirstFragments"/>
 
-        <fragment
-            android:id="@+id/firstFrag"
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondFragLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            class="kr.co.tjoeun.a20200319_01_fragment01.fragment.FirstFragments"/>
+            android:orientation="vertical">
+            <fragment
+                android:id="@+id/secondFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="kr.co.tjoeun.a20200319_01_fragment01.fragment.SecondFragment"/>
+
+
+        </LinearLayout>
+
+
 
 
     </LinearLayout>
