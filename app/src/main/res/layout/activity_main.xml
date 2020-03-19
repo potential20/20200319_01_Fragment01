@@ -8,6 +8,12 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+        <fragment
+            android:id="@+id/firstFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="kr.co.tjoeun.a20200319_01_fragment01.fragment.FirstFragments"/>
+
 
     </LinearLayout>
 </layout>
