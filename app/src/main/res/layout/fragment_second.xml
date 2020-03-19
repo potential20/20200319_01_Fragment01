@@ -9,23 +9,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/darkText"
             android:text="아이디"/>
         <EditText
             android:id="@+id/idEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/darkText"
+            android:inputType="textEmailAddress"
             android:hint="ID 입력"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PW"/>
+            android:layout_marginTop="15dp"
+            android:text="@string/password"
+            android:textColor="@color/darkText"/>
         <EditText
             android:id="@+id/pwEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="PW 입력"/>
+            android:inputType="textPassword"
+            android:hint="@string/pw_input_hint"/>
 
         <Button
             android:id="@+id/loginBtn"
