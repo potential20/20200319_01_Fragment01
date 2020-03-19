@@ -30,10 +30,34 @@ public class SecondFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        String id = binding.idEdt.getText().toString();
-        String pw = binding.pwEdt.getText().toString();
+        binding.loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        Toast.makeText(getActivity(),"관리자 로그인", Toast.LENGTH_SHORT).show();
+                String id = binding.idEdt.getText().toString();
+                String pw = binding.pwEdt.getText().toString();
+
+                if (id.equals("admin") && pw.equals("asdf1234")) {
+                    Toast.makeText(getActivity(), "관리자 로그인!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    if (id.equals("admin")) {
+//                ID는 맞게 입력
+                        Toast.makeText(getActivity(),"비번이 틀렸습니다.", Toast.LENGTH_SHORT).show();
+                    }
+//              ID 다르게 입력
+                    else {
+                        Toast.makeText(getActivity(),"잘못된 아이디 입니다.", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+            }
+        });
+
+
+
+
+
 
 
     }
